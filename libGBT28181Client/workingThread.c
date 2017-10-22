@@ -101,7 +101,7 @@ void* event_working_thread(void* arg)
                                 p_registered_device_temp->device_domain = osip_malloc(50);
                                 p_registered_device_temp->device_IP = osip_malloc(50);
                                 p_registered_device_temp->device_name = osip_malloc(50);
-                                p_registered_device_temp->sz_device_port
+								p_registered_device_temp->sz_device_port;
                             }
                             else
                             {

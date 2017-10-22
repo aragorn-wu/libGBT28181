@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -27,26 +27,26 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -68,6 +68,9 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Users\wuqf\sip\RTSPFFmpeg\PlayH264Dll;C:\Users\wuqf\sip\FreeSDP\src;C:\Users\wuqf\sip\libRTP\src;C:\Users\wuqf\sip\libxml2-2.9.3-win32-x86_64\include\libxml2;C:\Users\wuqf\sip\libosip2-5.0.0\include;C:\Users\wuqf\sip\libiconv-1.15\include;C:\Users\wuqf\sip\libexosip2-5.0.0\include;$(IncludePath)</IncludePath>
+    <ReferencePath>C:\Users\wuqf\sip\libsrtp\Debug;C:\Users\wuqf\sip\libRTP\MSVC\VS2013\Debug;$(ReferencePath)</ReferencePath>
+    <LibraryPath>C:\Users\wuqf\sip\libRTP\MSVC\VS2013\libRTP;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
@@ -102,7 +105,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>EXPORT_SYMBOLS;_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>false</SDLCheck>
-      <AdditionalIncludeDirectories>$(OSIPSDK)\include;$(EXOSIPSDK)\include;$(LIBXML2SDK)\include;$(LIBICONVSDK)\include;$(LIBRTPSDK)\include;$(RTSPFFMPEGSDK)\include;$(FREESDPSDK)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\wuqf\sip\RTSPFFmpeg\PlayH264Dll;C:\Users\wuqf\sip\libRTP\include;C:\Users\wuqf\sip\FreeSDP\src;C:\Users\wuqf\sip\libiconv-1.15\include;C:\Users\wuqf\sip\libexosip2-5.0.0\include;C:\Users\wuqf\sip\libosip2-5.0.0\include;C:\Users\wuqf\sip\libxml2-2.9.3-win32-x86_64\include\libxml2;$(OSIPSDK)\include;$(EXOSIPSDK)\include;$(LIBXML2SDK)\include;$(LIBICONVSDK)\include;$(LIBRTPSDK)\include;$(RTSPFFMPEGSDK)\include;$(FREESDPSDK)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
     <Link>

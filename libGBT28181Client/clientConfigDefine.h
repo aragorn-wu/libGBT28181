@@ -9,6 +9,7 @@
 #include <eXosip2\eXosip.h>
 #include <libRTP.h>
 #include <Windows.h>
+#include <libRTPSessionHandleDefine.h>
 
 #ifdef _MSC_VER
 #define snprintf _snprintf
@@ -41,7 +42,7 @@ typedef struct _registered_device
     uint16_t device_port;
     uint64_t expires;
     time_t register_time;
-};
+}registered_device;
 
 typedef struct _client_configurations
 {
